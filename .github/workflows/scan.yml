@@ -17,5 +17,5 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Run Python Script
-        run: python test.py
+      - name: Run Detection tool
+        run: python detect.py --input sample.jpg
