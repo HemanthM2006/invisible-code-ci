@@ -20,3 +20,6 @@ if __name__ == "__main__":
     output = run_detection(input_file)
 
     print(json.dumps(output))
+
+    if output["result"] == "fake":
+        sys.exit(1)   # fail CI
